@@ -1,4 +1,4 @@
-#method to sorting numbers =begin
+#method to sorting numbers 
 
 def sort_numbers(numbers)
   number_min = numbers[0].to_i
@@ -6,6 +6,7 @@ def sort_numbers(numbers)
   numbers.each do |number|
   	p number.to_i
   	p number_min
+  	#conditional to compare numbers
   	if number.to_i < number_min
   		number_min = number.to_i
   		sort_numbers << number.to_i
@@ -13,6 +14,7 @@ def sort_numbers(numbers)
   		sort_numbers << number.to_i
   	end
   end
+  #get array with sortin numbers
   p sort_numbers
 end
 
